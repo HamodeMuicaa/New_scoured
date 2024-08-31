@@ -1,0 +1,79 @@
+{
+    "name": "ميـوزك 🎸 بلاك",
+    "description": "- سـورس〔 بلاك - black 〕.. ميـوزك 🎸 لـ تشغيـل الاغانـي والفيديـو والبثـوث المباشـرة فـي المكالمـات الصوتيـه والمرئيـة عـلى تيليجــرام",
+    "logo": "https://te.legra.ph/file/470ffe7462e08decc56b9.jpg",
+    "keywords": [
+        "python3",
+        "telegram",
+        "bot",
+        "Zelzal",
+        "MusicBot",
+        "telegram-bot",
+        "pyrogram"
+    ],
+    "env": {
+      "BOT_TOKEN": {
+        "description": "تـــوكـــن البـــوت - من بـوت فـاذر〔 @Botfather 〕..",
+         "value": "7047183887:AAFA8pfgf9gt4vDy_1BnKzD2xLGPNUs4Rq8",
+         "required": true
+      },  
+      "CHANNEL_SUDO": {
+        "description": "يـــوزر قناة الاشتراك الاجباري »〔 بــدون @ 〕مــع رفــع البــوت إشــراف فــي القنــاة",
+        "value": "cecrr",
+        "required": true
+      },  
+      "OWNER_CHANNEL": {
+        "description": " 〔 رابط قناتك التانيه او كروب »〔 اختياري تقدر ماتحط ",
+        "value": "https://t.me/FF4C4",
+        "required": true
+      },  
+      "YAFA_CHANNEL": {
+        "description": "⦗ رابط قناتك ⦘ ↫ رابط قناتك الاشتراك الاجباري  ",
+        "value": "https://t.me/cecrr",
+        "required": true
+        },
+        "OWNER_ID": {
+            "description": "ايـــدي المطـــور - مطـــور بـــوت الميـــوزك〔 ايدي حسابك 〕..",
+            "value": "6094238403",
+            "required": true
+        },
+        "STRING_SESSION": {
+            "description": "كـــود تيـــرمكـــس - كـود جلسـة الحسـاب المساعـد لـ الميـوزك بايـروجـرام v2 مـن البـوت〔 @T66bot 〕.. ",
+            "value": "BAGi8fAAION8q4yYQ7L88rLq8-IbWHFVZAsd5JWvbn_4ykWNPkXi2LwD_dWVF9hJAdXLPhAAXxtdX6QpdzKRoHqkjma367P_YYBzpTr0CAT2y9zs_NVAtwwluLw3efAN6qWu6L56sn42dHTTQuF-8DjE3LiaO9geFdXC401dPY8L7z4QXsCt7H18ZNA9d01EzqqIh-q_8lNyAMtKHjEF_6B3kpV-W1Uerc5Warb3NIsI2-q1197CCGjqaGb1AwOtT81gj9BYW1GC_5F5BFcScqoU3ys1cFOU8glFxksZsgdqlbTAC5nWPgJSIi6QvTmvBrm-4bRLhF8caCpG_EW6CwcpAhZtaQAAAAGqfwr9AA",
+            "required": true
+        },
+        "HEROKU_API_KEY": {
+            "description": "كـــود مفتـــاح هيروكـــو - تروح ع الرابـط »〔 https://dashboard.heroku.com/account 〕 ع آخـر خانـه وتنسـخ الكـود لهنـا",
+            "value": "HRKU-d55d5bde-0d47-4235-b30e-0c678f1a1014",
+            "required": false
+        },
+        "HEROKU_APP_NAME": {
+            "description": "اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش سمــول〔 صغيـره فقـط 〕..",
+            "value": "",
+            "required": false
+        },
+        "LOGGER_ID": {
+            "description": "ادخــل ايــدي مجمـوعــة السجــل بجـانب الرقـم -100 فـي المربـع〔 سوي مجموعة جديدة وروح لاعدادات المجموعة وخلي السجل ظاهر .. بعدها ارفع البوت والحساب المساعد إشـراف وافتـح المكالمه بعدها جيب ايدي المجموعة لهنـا 〕..",
+            "value": "-1002011258224",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    },
+    "stack": "container"
+}
